@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thalesians.stochastics"
+version = "0.0.1"
+authors = [
+	{ name="Paul Alexander Bilokon", email="paul@thalesians.com" },
+	{ name="Abir Sridi", email="abir.sridi@thalesians.com" },
+]
+description = "A special-purpose Python library for simulation, stochastic analysis, and stochastic filtering"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+	"thalesians.adiutor>=0.0.3",
+   	"numpy>=1.26.4",
+	"statsmodels>=0.14.4",
+	"matplotlib>=3.9.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/thalesians/stochastics/"
+Issues = "https://github.com/thalesians/stochastics/issues"
