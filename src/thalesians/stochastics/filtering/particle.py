@@ -118,14 +118,14 @@ class ParticleFilter(objects.Named):
         self._cached_resampled_var = None
         
         self.log_likelihood = 0.0
-        self.effective_sample_size = np.NaN
+        self.effective_sample_size = np.nan
         
         if self._predicted_observation_sampler is not None:
             self.predicted_observation_particles = None
             self.predicted_observation_kde = None
-            self.predicted_observation = np.NaN
-            self.innovation = np.NaN
-            self.innovationvar = np.NaN
+            self.predicted_observation = np.nan
+            self.innovation = np.nan
+            self.innovationvar = np.nan
             
         assert self._predicted_observation_sampler is not None or outlier_threshold is None 
         self._outlier_threshold = outlier_threshold
@@ -231,7 +231,7 @@ class ParticleFilter(objects.Named):
             self._prior_particles[i,:] = npu.to_ndim_1(self._state_distr.sample())
             self._resampled_particles[i,:] = self._prior_particles[i,:]
         self._current_particle_idx = None
-        self._unnormalized_weights[:] = np.NaN
+        self._unnormalized_weights[:] = np.nan
         self._weights[:] = 1./self._particle_count
             
     def predict(self, time, true_value=None):
