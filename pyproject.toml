@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "thalesians.stochastics"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
 	{ name="Paul Alexander Bilokon", email="paul@thalesians.com" },
 	{ name="Abir Sridi", email="abir.sridi@thalesians.com" },
